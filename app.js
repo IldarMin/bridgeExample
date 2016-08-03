@@ -6,12 +6,12 @@
          .controller('mainCtrl', ['$scope', mainCtrl]);
 
   function mainCtrl($scope) {
-
+    $scope.result = '';
     $scope.processMe1 = function(text) {
-      console.log(text, '     processMe1');
+      $scope.result = text.toUpperCase();
     };
     $scope.processMe2 = function(text) {
-
+      $scope.result = text.toLowerCase();
     };
   }
 })();
