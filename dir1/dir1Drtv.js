@@ -7,6 +7,7 @@
   function dir1() {
     return {
       scope: {
+        process: '=?'
       },
       restrict: 'E',
       controller: 'dir1Ctrl',

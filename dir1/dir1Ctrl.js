@@ -5,8 +5,10 @@
   .controller('dir1Ctrl', ['$scope', dir1Ctrl]);
 
   function dir1Ctrl($scope) {
+    console.log($scope.process);
     $scope.onProcess = function(){
-      console.log($scope.inputText);
+      $scope.process($scope.inputText);
+      // console.log($scope.inputText);
     }
   }
 
